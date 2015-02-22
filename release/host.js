@@ -1,5 +1,5 @@
 ///<reference path='../definitions/ref.d.ts'/>
-var ts = require('typescript');
+var ts = require('jsx-typescript');
 var project = require('./project');
 var fs = require('fs');
 var path = require('path');

@@ -5,7 +5,7 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var ts = require('typescript');
+var ts = require('jsx-typescript');
 var gutil = require('gulp-util');
 var stream = require('stream');
 var project = require('./project');

@@ -1,5 +1,5 @@
 ///<reference path='../definitions/ref.d.ts'/>
-var ts = require('typescript');
+var ts = require('jsx-typescript');
 var gutil = require('gulp-util');
 var path = require('path');
 var fs = require('fs'); // Only used for readonly access
@@ -258,7 +258,7 @@ var Project = (function () {
             // If there are no syntax errors, check types
             var checker = this.program.getTypeChecker(true);
             var semanticErrors = checker.getDiagnostics();
-            var emitErrors = checker.emitFiles().diagnostics;
+            var emitErrors = checker.getDiagnostics()
             errors = semanticErrors.concat(emitErrors);
         }
         for (var i = 0; i < errors.length; i++) {
