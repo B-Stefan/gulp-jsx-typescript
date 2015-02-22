@@ -1,4 +1,4 @@
-import ts = require('typescript');
+import ts = require('jsx-typescript');
 import path = require('path');
 import project = require('./project');
 import main = require('./main');

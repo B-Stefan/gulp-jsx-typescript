@@ -1,6 +1,6 @@
 ///<reference path='../definitions/ref.d.ts'/>
 
-import ts = require('typescript');
+import ts = require('jsx-typescript');
 import main = require('main');
 import gutil = require('gulp-util');
 import path = require('path');

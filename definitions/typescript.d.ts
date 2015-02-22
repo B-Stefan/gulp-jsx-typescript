@@ -1,19 +1,19 @@
 /*! *****************************************************************************
-Copyright (c) Microsoft Corporation. All rights reserved. 
+Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0  
- 
+License at http://www.apache.org/licenses/LICENSE-2.0
+
 THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, 
-MERCHANTABLITY OR NON-INFRINGEMENT. 
- 
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
 See the Apache Version 2.0 License for specific language governing permissions
 and limitations under the License.
 ***************************************************************************** */
 
-declare module "typescript" {
+declare module "jsx-typescript" {
     interface Map<T> {
         [index: string]: T;
     }
@@ -1279,7 +1279,7 @@ declare module "typescript" {
         getNewLine(): string;
     }
 }
-declare module "typescript" {
+declare module "jsx-typescript" {
     interface ErrorCallback {
         (message: DiagnosticMessage): void;
     }
@@ -1327,17 +1327,17 @@ declare module "typescript" {
     function isIdentifierPart(ch: number, languageVersion: ScriptTarget): boolean;
     function createScanner(languageVersion: ScriptTarget, skipTrivia: boolean, text?: string, onError?: ErrorCallback): Scanner;
 }
-declare module "typescript" {
+declare module "jsx-typescript" {
     function getNodeConstructor(kind: SyntaxKind): new () => Node;
     function forEachChild<T>(node: Node, cbNode: (node: Node) => T, cbNodes?: (nodes: Node[]) => T): T;
     function createCompilerHost(options: CompilerOptions): CompilerHost;
     function createSourceFile(filename: string, sourceText: string, languageVersion: ScriptTarget, version: string, isOpen?: boolean): SourceFile;
     function createProgram(rootNames: string[], options: CompilerOptions, host: CompilerHost): Program;
 }
-declare module "typescript" {
+declare module "jsx-typescript" {
     function createTypeChecker(program: Program, fullTypeCheck: boolean): TypeChecker;
 }
-declare module "typescript" {
+declare module "jsx-typescript" {
     var servicesVersion: string;
     interface Node {
         getSourceFile(): SourceFile;
